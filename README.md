@@ -5,7 +5,6 @@ SESC (Simple Ensembl Symbol Converter) is essentially a user-friendly wrapper ar
 </p>
 
 # Dependencies
------------------
 
 SESC requires the following R packages:
 
