@@ -11,9 +11,8 @@ SESC (Simple Ensembl Symbol Converter) is essentially a user-friendly wrapper ar
   - Entrez Gene IDs
   - UniProt IDs
   - and vice versa…
+- Single symbol conversions for the impatient
 - Batch conversion from text files
-- Simple command-line interface
-- Flexible output with customizable columns
 
 ## Dependencies
 
@@ -37,4 +36,24 @@ BiocManager::install("biomaRt")
 ### Install CRAN packages
 ```R
 install.packages(c("optparse", "data.table"))
+```
+
+## Usage
+
+### Clone the repository
+```
+git clone https://github.com/Thanujay/SESC.git
+cd SESC
+```
+
+### Running of the SESC tool
+
+SESC tool have 3 sub-functions as given below,
+- Single - *Convert a single Ensembl ID into selected identifiers.*
+- Batch - *Convert multiple Ensembl IDs from an input txt file*
+- Features - *To print the features available in the human biomaRt DB*
+
+## Single Mode
+```R
+Rscript SESC_test.R -m single -q ENSG00000012048 -a ensembl_gene_id,hgnc_symbol -f ensembl_gene_id -o single_res.txt
 ```
