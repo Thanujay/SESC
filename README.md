@@ -17,9 +17,13 @@ Ensure you are using **R version ≥ 4.1.0** to satisfy Bioconductor requirement
 You can install them as follows:
 
 ### Install Bioconductor package
-```if (!requireNamespace("BiocManager", quietly = TRUE))
+```R
+if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
-   BiocManager::install("biomaRt")```
+BiocManager::install("biomaRt")
+```
 
 ### Install CRAN packages
-```install.packages(c("optparse", "data.table"))```
+```R
+install.packages(c("optparse", "data.table"))
+```
