@@ -4,6 +4,17 @@ SESC (Simple Ensembl Symbol Converter) is essentially a user-friendly wrapper ar
   <img width="556" height="602" alt="SESC_logo_final" src="https://github.com/user-attachments/assets/194b12cd-2418-45b4-9c25-f7c5c88e4b24" />
 </p>
 
+## Features
+
+- Convert Ensembl Gene/Transcript/Protein IDs into:
+  - HGNC symbols
+  - Entrez Gene IDs
+  - UniProt IDs
+  - and vice versa…
+- Batch conversion from text files
+- Simple command-line interface
+- Flexible output with customizable columns
+
 ## Dependencies
 
 SESC requires the following R packages:
