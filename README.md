@@ -84,3 +84,28 @@ Rscript SESC_v0.1.R -m features
 | -f/--filter    | Query filter for BioMart                | -f ensembl_gene_id              | Single/Batch mode |
 
 **Note**: In single mode, results can either be printed directly to stdout for quick reference, or saved to a .txt file for later use.
+
+## Example Workflow for Batch mode
+
+### Input (genes.txt)
+```
+ENSG00000141510
+ENSG00000171862
+ENSG00000155657
+```
+
+### Running Command
+```R
+Rscript SESC_v0.1.R -m batch -i genes.txt -a ensembl_gene_id,hgnc_symbol -f ensembl_gene_id -o genes_output.txt
+```
+
+### Output (genes_output.txt)
+
+| ensembl_gene_id |	hgnc_symbol |
+| --------------  |:-----------:|
+| ENSG00000141510 |	TP53        |
+| ENSG00000155657 | TTN         |
+| ENSG00000171862	| PTEN        |
+
+
+
