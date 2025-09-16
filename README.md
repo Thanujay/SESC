@@ -74,7 +74,7 @@ Rscript SESC_v0.1.R -m features
 ```
 ## Arguments
 
-| Flags          | Description                             | Example                         | Applicable        |
+| Flags          | Description                             |         Example                 |    Applicable     |
 | -------------- |:---------------------------------------:| -------------------------------:| -----------------:|
 | -m/--mode      | Mode of processing                      | -m (single/batch/features)      | Required          |
 | -q/--query     | Single query for annotation             | -q ENSG00000012048              | Single mode ONLY  |
