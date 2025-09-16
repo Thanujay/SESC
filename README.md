@@ -54,7 +54,16 @@ SESC tool have 3 sub-functions as given below,
 - **Features** - *To print the features available in the human biomaRt DB*
 
 #### Single Mode
-Run a single query conversion as given below,
+Run a single query conversion (To convert the ENSG gene ID to HGNC gene symbol) as given below,
 ```R
-Rscript SESC_<version>.R -m single -q ENSG00000012048 -a ensembl_gene_id,hgnc_symbol -f ensembl_gene_id -o single_res.txt
+Rscript SESC_v0.1.R -m single -q ENSG00000012048 -a ensembl_gene_id,hgnc_symbol -f ensembl_gene_id -o stdin
 ```
+<img width="1499" height="188" alt="Screenshot 2025-09-16 202345" src="https://github.com/user-attachments/assets/d52fe5ad-effa-4ace-863c-00202be815b4" />
+
+#### Batch Mode
+Run a batch conversion (To convert the multiple ENSG gene IDs to respective HGNC gene symbols) as given below,
+```R
+Rscript SESC_v0.1.R -m batch -i test_batch.txt -a ensembl_gene_id,hgnc_symbol -f ensembl_gene_id -o test_batch_output.txt
+```
+<img width="1626" height="139" alt="Screenshot 2025-09-16 203017" src="https://github.com/user-attachments/assets/0457830e-e5d7-49a7-8363-88f16060c350" />
+
