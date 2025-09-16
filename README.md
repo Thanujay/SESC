@@ -56,9 +56,9 @@ SESC tool have 3 sub-functions as given below,
 #### Single Mode
 Run a single query conversion (To convert the ENSG gene ID to HGNC gene symbol) as given below,
 ```R
-Rscript SESC_v0.1.R -m single -q ENSG00000012048 -a ensembl_gene_id,hgnc_symbol -f ensembl_gene_id -o stdin
+Rscript SESC_v0.1.R -m single -q ENSG00000012048 -a ensembl_gene_id,hgnc_symbol -f ensembl_gene_id -o stdout
 ```
-<img width="1499" height="188" alt="Screenshot 2025-09-16 202345" src="https://github.com/user-attachments/assets/d52fe5ad-effa-4ace-863c-00202be815b4" />
+<img width="1506" height="190" alt="Screenshot 2025-09-16 202345" src="https://github.com/user-attachments/assets/4eb20bc0-24ba-4073-8a40-b3b324e76a21" />
 
 #### Batch Mode
 Run a batch conversion (To convert the multiple ENSG gene IDs to respective HGNC gene symbols) as given below,
@@ -74,8 +74,13 @@ Rscript SESC_v0.1.R -m features
 ```
 ## Arguments
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Flags          | Description                             | Example                         | Applicable        |
+| -------------- |:---------------------------------------:| -------------------------------:| -----------------:|
+| -m/--mode      | Mode of processing                      | -m (single/batch/features)      | Required          |
+| -q/--query     | Single query for annotation             | -q ENSG00000012048              | Single mode ONLY  |
+| -i/--input     | Input file with multiple queries        | -i query.txt                    | Batch mode ONLY   |
+| -o/--output    | Output file to write results            | -o (stdout(Single mode)/res.txt)| Single/Batch mode |
+| -a/--attributes| Annotation attributes (comma-separated) | -a ensembl_gene_id,hgnc_symbol  | Single/Batch mode |
+| -f/--filter    | Query filter for BioMart                | -f ensembl_gene_id              | Single/Batch mode |
+
+**Note**: In single mode, results can either be printed directly to stdout for quick reference, or saved to a .txt file for later use.
