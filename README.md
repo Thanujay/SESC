@@ -67,3 +67,9 @@ Rscript SESC_v0.1.R -m batch -i test_batch.txt -a ensembl_gene_id,hgnc_symbol -f
 ```
 <img width="1626" height="139" alt="Screenshot 2025-09-16 203017" src="https://github.com/user-attachments/assets/0457830e-e5d7-49a7-8363-88f16060c350" />
 
+#### Features
+Function to print all the features available in the human biomaRt DB
+```R
+Rscript SESC_v0.1.R -m features
+```
+
