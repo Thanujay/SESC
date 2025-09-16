@@ -108,6 +108,6 @@ Rscript SESC_v0.1.R -m batch -i genes.txt -a ensembl_gene_id,hgnc_symbol -f ense
 | ENSG00000171862	| PTEN        |
 
 ## Contributions
- - Currently, SESC supports conversions using the human BioMart dataset. in the upcoming versions, will make the script flexible for any organism of your choice!
+ - Currently, SESC supports conversions using the human BioMart dataset. In the upcoming versions, will make the script flexible for any organism of your choice!
  - Pull requests and feature suggestions are welcome! Please open an issue first to discuss any major changes.
 
