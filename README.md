@@ -59,14 +59,12 @@ Run a single query conversion (To convert the ENSG gene ID to HGNC gene symbol) 
 ```R
 Rscript SESC_v0.2.R -m single -q ENSG00000012048 -a ensembl_gene_id,hgnc_symbol -f ensembl_gene_id -o stdout --org hsapiens_gene_ensembl
 ```
-<img width="1506" height="190" alt="Screenshot 2025-09-16 202345" src="https://github.com/user-attachments/assets/4eb20bc0-24ba-4073-8a40-b3b324e76a21" />
 
 #### Batch Mode
 Run a batch conversion (To convert the multiple ENSG gene IDs to respective HGNC gene symbols) as given below,
 ```R
 Rscript SESC_v0.2.R -m batch -i test_batch.txt -a ensembl_gene_id,hgnc_symbol -f ensembl_gene_id -o test_batch_output.txt --org hsapiens_gene_ensembl
 ```
-<img width="1626" height="139" alt="Screenshot 2025-09-16 203017" src="https://github.com/user-attachments/assets/0457830e-e5d7-49a7-8363-88f16060c350" />
 
 #### Features
 Function to print all the features available in the human biomaRt DB
